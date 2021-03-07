@@ -1,2 +1,104 @@
-<h1>Chúc mừng ngày phụ nữ việt nam<h1/>
-  
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>Happy International Women's Day!</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Happy International Women's Day!">
+    <meta name="keywords" content="HTML,CSS,Women,International,day,JavaScript">
+    <meta name="author" content="Aravind V Nair">
+    <script type="text/javascript">
+    $(window).on('load',function(){
+        $('#greet').modal('show');
+    });
+</script>
+</head>
+
+<body>
+    <div class="modal fade" id="greet" tabindex="-1" role="dialog" aria-labelledby="greetings" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="greetings">Happy International Women's Day! 🎉 🎊</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="color: black;">
+                Made by Aravind V Nair on the eve of International Women's Day. ♀️ 👩
+                <br><br>
+                Hope you like it. Upvote and follow me if you do. ☺️ 😇
+                <br><br>
+                What do you think about Women's Day? Mention in the comments.💭 🗣️
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" aria-label="Close" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="outside">
+        <p id="outside-title">
+            Happy International Women's Day!
+        </p>
+        <img id="outside-pic" src="https://i.pinimg.com/736x/84/a8/89/84a889054ead625422f88821ca10209d.jpg" onerror="err1()">
+        <br>
+        <br>
+        <p>
+            <button type="button" class="btn btn-danger" onclick="open_card()">Click to open card</button>
+            <a class="btn btn-success" target="_blank" href="https://aravindvnair1999.blogspot.in/p/about-the.html">About Me</a>
+            <a class="btn btn-primary" target="_blank" href="https://aravindvnair1999.blogspot.in/2016/06/who-should-be-blamed-for-rape.html">Article on rape by me</a>
+        </p>
+        <p id="outside-title">From: Aravind V. Nair</p>
+        <p id="outside-title">To: All of you out there!</p>
+    </div>
+    <div id="inside">
+        <div id="inside-carousel" class="carousel slide" data-ride="carousel" style="height: 90%; width: 100%">
+            <ol class="carousel-indicators">
+                <li data-target="#inside-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#inside-carousel" data-slide-to="1"></li>
+                <li data-target="#inside-carousel" data-slide-to="2"></li>
+                <li data-target="#inside-carousel" data-slide-to="3"></li>
+                <li data-target="#inside-carousel" data-slide-to="4"></li>
+                <li data-target="#inside-carousel" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://pbs.twimg.com/media/DGw7ClwWsAEBxSk.jpg" id="img1" alt="First slide" onerror="err2()">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://pbs.twimg.com/media/C6ZHnnpUwAE7Utt.jpg" id="img2" alt="Second slide" onerror="err3()">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://pbs.twimg.com/media/C6XlUPAWYAA_BdP.jpg" id="img3" alt="Third slide" onerror="err4()">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://www.123greetingmessage.net/wp-content/uploads/2018/03/Womens-Day-2018.jpg" id="img4" alt="Fourth slide" onerror="err5()">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://pbs.twimg.com/media/Anc0efDCEAESKd1.jpg" id="img5" alt="Fifth slide" onerror="err6()">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://4.bp.blogspot.com/-_RWJ2LNB7Os/WTTjkbkrReI/AAAAAAAAMQ8/VE_gb-fWkqcDSxIFWBYP9RPsXZ6yvNTJwCEw/s1600/kick%2Bass.jpg" id="img6" alt="Sixth slide" onerror="err7()">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#inside-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#inside-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <p style="height: 5%; width: 100%">
+            <button type="button" class="btn btn-dark" onclick="close_card()">Click to close card</button>
+        </p>
+    </div>
+
+</body>
+
+</html>
